@@ -16,7 +16,7 @@
 
 package com.github.andrewlord1990.snackbarbuilder.callback;
 
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 
 /**
  * A callback that will be notified when the Snackbar has been shown (has become visible).

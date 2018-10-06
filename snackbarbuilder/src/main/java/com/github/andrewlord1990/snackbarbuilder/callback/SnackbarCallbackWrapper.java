@@ -16,23 +16,22 @@
 
 package com.github.andrewlord1990.snackbarbuilder.callback;
 
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.Snackbar.Callback;
+import com.google.android.material.snackbar.Snackbar;
 
 /**
  * A wrapper for the standard Callback, which you can inherit from. This allows you to combine multiple callbacks to
  * the Snackbar.
  */
-public class SnackbarCallbackWrapper extends Callback {
+public class SnackbarCallbackWrapper extends Snackbar.Callback {
 
-  protected Callback callback;
+  protected Snackbar.Callback callback;
 
   /**
    * Create the callback wrapper from a standard Callback.
    *
    * @param callback The callback to wrap.
    */
-  public SnackbarCallbackWrapper(Callback callback) {
+  public SnackbarCallbackWrapper(Snackbar.Callback callback) {
     this.callback = callback;
   }
 

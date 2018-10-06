@@ -20,13 +20,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DimenRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -43,9 +36,17 @@ import com.github.andrewlord1990.snackbarbuilder.callback.SnackbarShowCallback;
 import com.github.andrewlord1990.snackbarbuilder.callback.SnackbarSwipeDismissCallback;
 import com.github.andrewlord1990.snackbarbuilder.callback.SnackbarTimeoutDismissCallback;
 import com.github.andrewlord1990.snackbarbuilder.parent.SnackbarParentFinder;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DimenRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 
 /**
  * A builder pattern to easily create and customise Android Design Support library Snackbars. On top of the

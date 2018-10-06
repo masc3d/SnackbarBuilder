@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
-apply plugin: 'jacoco'
-apply plugin: 'com.github.kt3k.coveralls'
+//apply plugin: 'jacoco'
+//apply plugin: 'com.github.kt3k.coveralls'
 
 android {
   compileSdkVersion rootProject.ext.compileSdk
-  buildToolsVersion '25.0.3'
+  buildToolsVersion '28.0.3'
 
   defaultConfig {
     minSdkVersion rootProject.ext.minSdk
@@ -21,10 +21,10 @@ android {
 }
 
 dependencies {
-  compile 'com.android.support:support-annotations:25.4.0'
-  compile 'com.android.support:support-v4:25.4.0'
-  compile 'com.android.support:appcompat-v7:25.4.0'
-  compile 'com.android.support:design:25.4.0'
+  compile 'com.android.support:support-annotations:28.0.0'
+  compile 'com.android.support:support-v4:28.0.0'
+  compile 'com.android.support:appcompat-v7:28.0.0'
+  compile 'com.android.support:design:28.0.0'
 
   testCompile 'junit:junit:4.12'
   testCompile 'org.robolectric:robolectric:3.1.4'
@@ -33,5 +33,5 @@ dependencies {
   testCompile 'org.mockito:mockito-core:1.10.19'
 }
 
-apply from: 'bintray-upload.gradle'
-apply from: 'coverage.gradle'
+//apply from: 'bintray-upload.gradle'
+//apply from: 'coverage.gradle'

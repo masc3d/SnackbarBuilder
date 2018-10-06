@@ -19,16 +19,17 @@ package com.github.andrewlord1990.snackbarbuilder.toastbuilder;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.andrewlord1990.snackbarbuilder.R;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 
 /**
  * A builder pattern to easily create Toasts. On top of the options provided through the platform API, you can also

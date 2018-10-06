@@ -19,15 +19,6 @@ package com.github.andrewlord1990.snackbarbuilder;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DimenRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.Snackbar.Callback;
-import android.support.v4.content.ContextCompat;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -37,8 +28,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.andrewlord1990.snackbarbuilder.callback.SnackbarCallback;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DimenRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
+import androidx.core.content.ContextCompat;
 
 /**
  * SnackbarWrapper is an extension to the Snackbar available within the Android Design Support library. By wrapping a
@@ -495,7 +495,7 @@ public final class SnackbarWrapper {
    */
   @NonNull
   @SuppressWarnings("WeakerAccess")
-  public SnackbarWrapper addCallback(Callback callback) {
+  public SnackbarWrapper addCallback(Snackbar.Callback callback) {
     snackbar.addCallback(callback);
     return this;
   }
@@ -508,7 +508,7 @@ public final class SnackbarWrapper {
    */
   @NonNull
   @SuppressWarnings("WeakerAccess")
-  public SnackbarWrapper addCallbacks(List<Callback> callbacks) {
+  public SnackbarWrapper addCallbacks(List<Snackbar.Callback> callbacks) {
     int callbacksSize = callbacks.size();
     for (int i = 0; i < callbacksSize; i++) {
       addCallback(callbacks.get(i));
